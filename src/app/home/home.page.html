@@ -6,34 +6,34 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content >
+  
   <!-- <body ng-mod ng-controller="tipCtrl"> -->
-    <!-- <body> -->
-  <div class="ion-padding">
-    <span class=normalText>Theres Tips Coming..... </span><span class=fancyText>Eventually</span>
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-    <p>{{cTip}}</p>
+    <!-- div tag for random backround function (not currently working) -->
+    <!-- <div ng-app='bG' ng-controller='backgroundCtrl' id="allBackground" class="{{randBackG}}"> -->
+                      <!-- <script>
+                        backgroundFunction($scope)
+                      
+                        </script> -->
+
+      <!-- div tag for static backround -->
+      <div ng-app='bG' ng-controller='backgroundCtrl' class="allBackground">
+   
+      <div class="ion-padding">
+      <span class=normalText>There's Tips Coming..... </span><span class=fancyText>Eventually</span>
+      <!-- <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p> -->
+      <!-- <p>{{cTip}}</p> -->
+      </div>
+
+  <!-- Test changes in ionic default colors -->
+  <div class=buttons>
+    <ion-button color="primary">Primary Button</ion-button>
+    <ion-button color="secondary">Secondary Button</ion-button>
   </div>
-  <ion-button color="primary">Primary Button</ion-button>
-  <ion-button color="secondary">Secondary Button</ion-button>
-
-    <!-- <IonButton color="primary">Primary</IonButton> -->
+    </div>
 
 
-  <!-- <script>
-  angular.module('tipMod',['ionic'])
-
-.controller('tipCtrl', function($scope, $http){
-    
-    $http.get(app.js)
-    .then(function(response){
-        var rand=Math.floor(Math.random() * 10);
-        var currentTip=myTips[rand];
-        $scope.cTip=response.data
-    })
-})
-</script> 
-</body> -->
+<!-- </body>  -->
 </ion-content>
 
  
