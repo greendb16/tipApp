@@ -1,21 +1,42 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tipper
+      <span class=fancyText>Tipper</span>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <body ng-controller="tipCtrl">
+  <!-- <body ng-mod ng-controller="tipCtrl"> -->
+    <!-- <body> -->
   <div class="ion-padding">
-    The world is your oyster.
+    <span class=normalText>Theres Tips Coming..... </span><span class=fancyText>Eventually</span>
     <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
     <p>{{cTip}}</p>
   </div>
-  
+  <ion-button color="primary">Primary Button</ion-button>
+  <ion-button color="secondary">Secondary Button</ion-button>
+
+    <!-- <IonButton color="primary">Primary</IonButton> -->
+
+
+  <!-- <script>
+  angular.module('tipMod',['ionic'])
+
+.controller('tipCtrl', function($scope, $http){
     
-</body>
+    $http.get(app.js)
+    .then(function(response){
+        var rand=Math.floor(Math.random() * 10);
+        var currentTip=myTips[rand];
+        $scope.cTip=response.data
+    })
+})
+</script> 
+</body> -->
 </ion-content>
+
+ 
+
 
 
